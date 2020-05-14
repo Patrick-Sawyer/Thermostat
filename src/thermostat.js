@@ -43,7 +43,12 @@ class Thermostat{
   }
 
   switchPowerSavingModeOn() {
+
     this.powerSavingMode = true;
+
+    if (this.temperature > this.MAX_LIMIT_PSM_ON){
+      this.temperature = this.MAX_LIMIT_PSM_ON;
+    }
   }
 
   isMaximumTemperature() {
