@@ -20,6 +20,8 @@ $(document).ready(function() {
   $('#powersaving-on').click(function(){
     thermostat.switchPowerSavingModeOn();
     $('#power-saving-status').text('on');
+    $('#powersaving-off').css("color", "black");
+    $('#powersaving-on').css("color", "#db5a37");
     updateTemperature();
   });
 
@@ -27,6 +29,8 @@ $(document).ready(function() {
     thermostat.switchPowerSavingModeOff();
     $('#power-saving-status').text('off');
     updateTemperature();
+    $('#powersaving-off').css("color", "#db5a37");
+    $('#powersaving-on').css("color", "black");
   })
 
   displayWeather('london');

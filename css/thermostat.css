@@ -1,11 +1,123 @@
-.low-usage {
-  color: green;
+body {
+	margin:0px;
+	height: 100%;
+	font-family: Helvetica, Arial;
+
 }
 
-.medium-usage {
-  color: black;
+#left {
+	width:calc(100vw - 120px);
+	height:100vh;
+	float:left;
 }
 
-.high-usage {
-  color: red;
+#right {
+	width:120px;
+	background: black;
+	float: left;
+	height:100vh;
+}
+
+#location{
+	width:100%;
+	padding:20px;
+}
+
+#temperature_div{
+	width:100%;
+	text-align: right;
+
+}
+
+.button{
+	background:none;
+    border:none;
+    margin:0;
+    padding:5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.low-usage{
+	font-size: 150px;
+	margin: 0px;
+	color: #81c951;
+}
+
+.medium-usage{
+	font-size: 150px;
+	margin: 0px;
+	color: #ffe208;
+
+}
+
+.high-usage{
+	font-size: 150px;
+	margin: 0px;
+	color: #db5a37;
+}
+
+.button2{
+	background:none;
+    border:none;
+    margin:0;
+    padding:5px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    top:2px
+}
+
+#powersaving-on{
+	color:#db5a37;
+}
+
+button:focus{
+	outline:none;
+}
+
+input:focus{
+	outline:none;
+}
+
+
+#tempInner{
+	padding:10px;
+}
+
+#location_inner{
+	padding:20px;
+	color: #db5a37;
+}
+
+#current-city:focus{
+	outline:none;
+}
+
+aside{
+	filter: flipv() fliph(); 
+	writing-mode: tb-rl;
+	height:100%;
+}
+
+aside h1{
+	color:white;
+	padding:0px;
+	padding-top:10px;
+	margin:0px;
+	height:100%;
+	width:100%;
+	font-size: 100px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#test{
+	width:100%;
+}
+
+@media screen and (min-width: 900px) {
+	body{
+		background: url('../images/thermometer.jpg') no-repeat fixed center; 
+	}
 }
